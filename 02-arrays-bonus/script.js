@@ -39,14 +39,19 @@ console.log(teachers);
 let isFabioPresent = false;
 
 for (let i = 0; i < teachers.length; i++) {  
-  if ( teachers[i] === 'Fabio') {
+  if ( teachers[i] === 'Fabio') {    //se fabio e dentro la casella di teachers, allora torna vero;
     isFabioPresent = true;  
   }                       
 }
 console.log(isFabioPresent);
 
-//se fabio e dentro la casella di teachers
+
 
 
 // 5. Unisci tutti gli insegnanti nell'array teachers in una stringa  separata da virgole e salvala nella variabile teachersString
-const teachersString = null;
+let teachersString =''
+
+for (let i = 0; i < teachers.length; i++) {  
+  teachersString = `${teachersString} ${teachers[i]},`;                    
+}
+console.log(teachersString);
