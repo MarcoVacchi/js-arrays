@@ -32,8 +32,9 @@ const elementRemove = teachers.indexOf(voglioEliminare);
 
 if (elementRemove >= 0) {
   teachers.splice(elementRemove,1);
+  console.log(teachers);
 }
-console.log(teachers);
+
 
 }
 // 4. Verifica se 'Fabio' è presente nell'array teachers
